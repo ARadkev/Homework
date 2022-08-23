@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Optionals_homework_joystick" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XIz-NQ-eWe">
+                                <rect key="frame" x="64" y="363" width="300" height="200"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zha-xB-yYC">
+                                        <rect key="frame" x="110" y="10" width="80" height="31"/>
+                                        <color key="backgroundColor" red="1" green="0.98518993399999999" blue="0.170632904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="kbR-07-LFR"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Top"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8F-hG-HLG">
+                                        <rect key="frame" x="110" y="159" width="80" height="31"/>
+                                        <color key="backgroundColor" red="1" green="0.98518993399999999" blue="0.170632904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="qUq-Y1-hvv"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Bottom"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d6Z-x3-dhY">
+                                        <rect key="frame" x="10" y="84.666666666666686" width="80" height="31"/>
+                                        <color key="backgroundColor" red="1" green="0.98518993399999999" blue="0.170632904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="bmG-KE-s9W"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Left"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pXw-PZ-5Ve">
+                                        <rect key="frame" x="210" y="84.666666666666686" width="80" height="31"/>
+                                        <color key="backgroundColor" red="1" green="0.98518993399999999" blue="0.170632904" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="eoR-6G-2xT"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Right"/>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                <constraints>
+                                    <constraint firstItem="d6Z-x3-dhY" firstAttribute="leading" secondItem="XIz-NQ-eWe" secondAttribute="leading" constant="10" id="6lG-jd-3eZ"/>
+                                    <constraint firstItem="d6Z-x3-dhY" firstAttribute="centerY" secondItem="XIz-NQ-eWe" secondAttribute="centerY" id="BNG-rp-BUW"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="G0m-sg-mYc"/>
+                                    <constraint firstItem="Zha-xB-yYC" firstAttribute="centerX" secondItem="XIz-NQ-eWe" secondAttribute="centerX" id="au5-p6-laq"/>
+                                    <constraint firstItem="pXw-PZ-5Ve" firstAttribute="centerY" secondItem="XIz-NQ-eWe" secondAttribute="centerY" id="fV7-6O-YSS"/>
+                                    <constraint firstItem="Zha-xB-yYC" firstAttribute="top" secondItem="XIz-NQ-eWe" secondAttribute="top" constant="10" id="lfk-AR-6IA"/>
+                                    <constraint firstAttribute="height" constant="200" id="sIT-5N-hE6"/>
+                                    <constraint firstAttribute="trailing" secondItem="pXw-PZ-5Ve" secondAttribute="trailing" constant="10" id="uqW-F5-gk9"/>
+                                    <constraint firstItem="t8F-hG-HLG" firstAttribute="centerX" secondItem="XIz-NQ-eWe" secondAttribute="centerX" id="uy5-1R-1I8"/>
+                                    <constraint firstAttribute="bottom" secondItem="t8F-hG-HLG" secondAttribute="bottom" constant="10" id="xm3-Uq-Dlq"/>
+                                    <constraint firstAttribute="width" constant="300" id="ySR-Z8-X7p"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="es0-4d-cGs">
+                                <rect key="frame" x="142" y="593" width="144" height="31"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Show/hide joystick"/>
+                                <connections>
+                                    <action selector="showHideButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a1d-7y-HgK"/>
+                                    <outletCollection property="gestureRecognizers" destination="ebV-Nc-3mg" appends="YES" id="z1Z-Pd-x67"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XIz-NQ-eWe" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4va-xI-bGB"/>
+                            <constraint firstItem="XIz-NQ-eWe" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HPc-tl-w8l"/>
+                            <constraint firstItem="es0-4d-cGs" firstAttribute="top" secondItem="XIz-NQ-eWe" secondAttribute="bottom" constant="30" id="Ur7-RG-iRY"/>
+                            <constraint firstItem="es0-4d-cGs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rhj-s1-lC6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bottomButton" destination="t8F-hG-HLG" id="vYh-er-8dB"/>
+                        <outlet property="leftButton" destination="d6Z-x3-dhY" id="MXB-Dm-igH"/>
+                        <outlet property="rightButton" destination="pXw-PZ-5Ve" id="3va-4k-CmF"/>
+                        <outlet property="topButton" destination="Zha-xB-yYC" id="BtU-TJ-Nza"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="ebV-Nc-3mg">
+                    <connections>
+                        <action selector="respondTapGesture:" destination="BYZ-38-t0r" id="f51-Dh-NeY"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-23" y="52"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
