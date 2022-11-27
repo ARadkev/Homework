@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="JWF-Lx-TPp" customClass="CellWith" customModule="СР" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JWF-Lx-TPp" id="LFD-NX-mAr">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="ydQ-1c-1Jr">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ji5-KA-fho">
+                                <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="PuO-I7-Xnv"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLG-eb-ra8">
+                                <rect key="frame" x="49" y="0.0" width="344" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ydQ-1c-1Jr" firstAttribute="leading" secondItem="LFD-NX-mAr" secondAttribute="leading" id="S9P-qd-CtM"/>
+                    <constraint firstAttribute="bottom" secondItem="ydQ-1c-1Jr" secondAttribute="bottom" id="T27-zT-Co3"/>
+                    <constraint firstItem="ydQ-1c-1Jr" firstAttribute="top" secondItem="LFD-NX-mAr" secondAttribute="top" id="YsE-2R-aMW"/>
+                    <constraint firstAttribute="trailing" secondItem="ydQ-1c-1Jr" secondAttribute="trailing" id="zJ5-i2-4kZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView" destination="Ji5-KA-fho" id="B86-aj-tg6"/>
+                <outlet property="label" destination="ZLG-eb-ra8" id="1tt-qr-jGb"/>
+                <outlet property="myImage" destination="Ji5-KA-fho" id="BuC-om-bIq"/>
+            </connections>
+            <point key="canvasLocation" x="869" y="0.0"/>
+        </tableViewCell>
+    </objects>
+</document>
